@@ -101,7 +101,7 @@ class GoogleDriveHelper:
             INDEX += 1          
             if response:
                 if add_title_msg == True:
-                    msg = f'<h3>Search Results for : {fileName}</h3><br>@LoaderXbot #ProjektX<br><br>'
+                    msg = f'<h3>Search Results for : {fileName}</h3><br>Here Your Result Do Joined on @opencloudxlogs<br><br>'
                     add_title_msg = False
                 msg += f"╾────────────╼<br><b>{DRIVE_NAME[INDEX]}</b><br>╾────────────╼<br>"
                 for file in response:
@@ -133,7 +133,7 @@ class GoogleDriveHelper:
             return "No Result Found :(", None
 
         for content in self.telegraph_content :
-            self.path.append(telegra_ph.create_page(title = 'OpenCloudX',
+            self.path.append(telegra_ph.create_page(title = 'OpenCloudX Search',
                                                 html_content=content )['path'])
 
         self.num_of_path = len(self.path)      
