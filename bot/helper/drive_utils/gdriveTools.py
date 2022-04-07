@@ -133,7 +133,7 @@ class GoogleDriveHelper:
             return "No Result Found :(", None
 
         for content in self.telegraph_content :
-            self.path.append(telegra_ph.create_page(title = 'OpenCloudX',
+            self.path.append(telegra_ph.create_page(title = 'OpenCloudX Search',
                                                 html_content=content )['path'])
 
         self.num_of_path = len(self.path)      
